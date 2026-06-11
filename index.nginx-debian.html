@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Naik | DevOps Engineer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:4rem;
+    color:#38bdf8;
+}
+
+header p{
+    font-size:1.3rem;
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e293b;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f172a;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Abhishek Naik</h1>
+    <p>Fresher DevOps Engineer</p>
+    <p>AWS | Linux | Docker | Jenkins | Git | CI/CD | Nginx</p>
+
+    <a href="#projects" class="btn">View Projects</a>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I'm a Fresher DevOps Engineer passionate about Cloud Computing,
+            Linux Administration, Automation and Infrastructure Management.
+            I enjoy working with AWS, Docker, Jenkins, CI/CD pipelines and
+            modern DevOps tools to build scalable and reliable systems.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>AWS Cloud</h3>
+            <p>EC2, S3, IAM, VPC, Security Groups</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Linux</h3>
+            <p>Ubuntu Administration & Shell Commands</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Containers</h3>
+            <p>Docker & Docker Compose</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CI/CD</h3>
+            <p>Jenkins & GitHub Actions</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Version Control</h3>
+            <p>Git & GitHub</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Web Server</h3>
+            <p>Nginx Configuration & Deployment</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>AWS EC2 Deployment</h3>
+            <p>
+                Deployed and hosted a static website on AWS EC2 using Ubuntu
+                Linux and Nginx. Configured SSH access, Security Groups and
+                web server setup.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Designed and developed a fully responsive personal portfolio
+                website showcasing skills, projects and contact information.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>
+                Built a weather application using HTML, CSS and JavaScript
+                integrated with Weather APIs for real-time weather updates.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+
+        <p>📧 Email</p>
+        <a href="mailto:naikabhishek12345@gmail.com">
+            naikabhishek12345@gmail.com
+        </a>
+
+        <br><br>
+
+        <p>💼 LinkedIn</p>
+        <a href="https://www.linkedin.com/in/abhishek-naik13" target="_blank">
+            linkedin.com/in/abhishek-naik13
+        </a>
+
+        <br><br>
+
+        <p>💻 GitHub</p>
+        <a href="https://github.com/abhishek-naik-13" target="_blank">
+            github.com/abhishek-naik-13
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Abhishek Naik | DevOps Engineer</p>
+</footer>
+
+</body>
+</html>
